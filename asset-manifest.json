@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-loan-app/static/css/main.202abfd2.chunk.css",
-    "main.js": "/react-loan-app/static/js/main.5b3c43d2.chunk.js",
-    "main.js.map": "/react-loan-app/static/js/main.5b3c43d2.chunk.js.map",
+    "main.js": "/react-loan-app/static/js/main.9ba5a9f9.chunk.js",
+    "main.js.map": "/react-loan-app/static/js/main.9ba5a9f9.chunk.js.map",
     "runtime-main.js": "/react-loan-app/static/js/runtime-main.3de61be2.js",
     "runtime-main.js.map": "/react-loan-app/static/js/runtime-main.3de61be2.js.map",
     "static/css/2.833dd627.chunk.css": "/react-loan-app/static/css/2.833dd627.chunk.css",
     "static/js/2.682ac5a4.chunk.js": "/react-loan-app/static/js/2.682ac5a4.chunk.js",
     "static/js/2.682ac5a4.chunk.js.map": "/react-loan-app/static/js/2.682ac5a4.chunk.js.map",
     "index.html": "/react-loan-app/index.html",
-    "precache-manifest.5d079870ec9e19e4447094c3403d27c3.js": "/react-loan-app/precache-manifest.5d079870ec9e19e4447094c3403d27c3.js",
+    "precache-manifest.9b127e0ee30cf7bffb15a63720eeaf20.js": "/react-loan-app/precache-manifest.9b127e0ee30cf7bffb15a63720eeaf20.js",
     "service-worker.js": "/react-loan-app/service-worker.js",
     "static/css/2.833dd627.chunk.css.map": "/react-loan-app/static/css/2.833dd627.chunk.css.map",
     "static/css/main.202abfd2.chunk.css.map": "/react-loan-app/static/css/main.202abfd2.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.833dd627.chunk.css",
     "static/js/2.682ac5a4.chunk.js",
     "static/css/main.202abfd2.chunk.css",
-    "static/js/main.5b3c43d2.chunk.js"
+    "static/js/main.9ba5a9f9.chunk.js"
   ]
 }
