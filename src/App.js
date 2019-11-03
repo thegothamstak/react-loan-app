@@ -33,7 +33,6 @@ class App extends Component {
             //  Check if details exist in cache, if yes display without calling API
             if(localStorage.getItem('loan-amount-cache')) {
                 if(this.state.cacheAmountList[loanAmount + '-' + loanDuration]) {
-                    console.log('From cache');
                     this.setState({loanDetails: this.state.cacheAmountList[loanAmount + '-' + loanDuration].data});
                     this.setState({displayFlag: 2});
                     return;
