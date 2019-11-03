@@ -1,0 +1,27 @@
+.content {
+  height: 100vh;
+  margin-left: 300px;
+  background:  rgba(0, 0, 0, 0) url("./assets/images/whiteCarbonTheme.png") repeat scroll 0% 0%;
+}
+
+.max-width-form {
+  max-width: 600px !important;
+}
+
+.h-60px {
+  height: 60px !important;
+}
+
+.font-size-large {
+  font-size: large !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .content {
+    margin-left: 0;
+  }
+}
