@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import './App.css';
+//  Child components
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import LoanAmountForm from './components/LoanAmountForm/LoanAmountForm';
 import LoanDetails from './components/LoanDetails/LoanDetails';
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
-
+//  Axios for AJAX calls
 import Axios from 'axios';
-
+//  Root component - App
 class App extends Component {
     constructor(props) {
         super(props);
