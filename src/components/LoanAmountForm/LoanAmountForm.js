@@ -1,35 +1,42 @@
 import React from 'react';
-import './LoanAmountForm.css';
 
+//  LoanAmountForm component to enter loan amount and duration to get details
 const LoanAmountForm = (props) => {
     return (
         <div className="mt-5">
             <div className="m-auto max-width-form">
+                {/* card */}
                 <div className="card mb-3 bg-light">
                     <div className="card-body">
+                        {/* Enter loan amount */}
                         <div className="form-group">
                             <label htmlFor="amountRange" className="m-0">
                                 <h4 className="font-weight-normal m-0">Loan Amount :</h4>
                             </label>
                             <div className="font-weight-light text-md-left text-center">( Use slider to select an amount between $500 and $5000 )</div>
                             <div className="d-flex align-items-center mt-2">
+                                {/* slider */}
                                 <div className="w-75">
                                     <input type="range" min={500} max={5000} className="form-control-range" id="amountRange" onChange={props.changeLoanAmount} value={props.loanAmount}/>
                                 </div>
-                                <div className="w-25">
+                                {/* input read-only */}
+                                <div className="w-25 pl-2">
                                     <input type="text" className="form-control-range font-size-large" id="amountValue" value={props.loanAmount} readOnly={true}/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                {/* card */}
                 <div className="card mb-3 bg-light">
                     <div className="card-body">
+                        {/* Select loan duration */}
                         <div className="form-group">
                             <label htmlFor="durationSelect" className="m-0">
                                 <h4 className="font-weight-normal m-0">Loan Duration :</h4>
                             </label>
                             <div className="font-weight-light text-md-left text-center">( Select number of months between 6 to 24 )</div>
+                            {/* select for duration */}
                             <div className="mt-3">
                                 <select className="form-control font-size-large" id="durationSelect" onChange={props.changeLoanDuration} value={props.loanDuration}>
                                     <option value="6">6 months</option>
@@ -57,6 +64,7 @@ const LoanAmountForm = (props) => {
                     </div>
                 </div>
                 <div className="text-center">
+                    {/* Button to call getLoanDetails method received as a prop from App component*/}
                     <button onClick={props.getLoanDetails.bind(this, props.loanAmount, props.loanDuration)} className="btn btn-primary pr-4 pl-4">
                         <h4 className="font-weight-normal m-0">Submit</h4>
                     </button>
@@ -65,5 +73,5 @@ const LoanAmountForm = (props) => {
         </div>
     );
 };
-
+//  default export
 export default LoanAmountForm;

@@ -1,3 +1,4 @@
+/* Sidebar */
 .sidebar {
     height: 100%;
     position: absolute;
@@ -9,12 +10,12 @@
     transition: 0.5s;
     background-color: slategray;
 }
-
+/* To hide sidebar */
 .hide-sidebar {
     visibility: visible;
     opacity: 1;
 }
-
+/* Collapse sidebar button */
 .close {
     cursor: pointer;
     color: #ffffff !important;
@@ -23,12 +24,13 @@
     padding-left: 10px;
     /*transform: translate(0%, -50%);*/
 }
-
+/* Sidebar collapse button in desktop view */
 .collapse-sidebar {
     display: none;
 }
-
+/* View port at max 720px - tablet */
 @media screen and (max-width: 720px) {
+    /* Sidebar */
     .sidebar {
         position: fixed;
         z-index: 999;
@@ -36,16 +38,16 @@
         opacity: 0;
         transition: visibility 0s, opacity 0.5s linear;
     }
-
+    /* Collapse sidebar button */
     .collapse-sidebar {
         display: block;
     }
-
+    /* To collapse sidebar */
     .hide-sidebar {
         visibility: hidden;
         opacity: 0;
     }
-
+    /* To show sidebar */
     .show-sidebar {
         visibility: visible;
         opacity: 1;

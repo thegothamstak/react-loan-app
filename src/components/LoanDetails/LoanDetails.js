@@ -1,11 +1,13 @@
 import React from 'react';
-
+//  LoanDetails component to display details received from API
 const LoanDetails = (props) => {
     return (
         <div className="m-md-5">
             <div className="max-width-form m-auto">
+                {/* card-body */}
                 <div className="card-body">
                     <div className="row">
+                        {/* Principal Amount */}
                         <div className="col-md-6 col-xs-12 mb-3">
                             <div className="card text-center">
                                 <div className="card-body">
@@ -15,6 +17,7 @@ const LoanDetails = (props) => {
                                 </div>
                             </div>
                         </div>
+                        {/* Rate of interest */}
                         <div className="col-md-6 col-xs-12 mb-3">
                             <div className="card text-center">
                                 <div className="card-body">
@@ -24,6 +27,7 @@ const LoanDetails = (props) => {
                                 </div>
                             </div>
                         </div>
+                        {/* Monthly installment amount */}
                         <div className="col-md-6 col-xs-12 mb-3">
                             <div className="card text-center">
                                 <div className="card-body">
@@ -33,6 +37,7 @@ const LoanDetails = (props) => {
                                 </div>
                             </div>
                         </div>
+                        {/* Number of payments */}
                         <div className="col-md-6 col-xs-12 mb-3">
                             <div className="card text-center">
                                 <div className="card-body">
@@ -43,6 +48,7 @@ const LoanDetails = (props) => {
                             </div>
                         </div>
                     </div>
+                    {/* Button to return to LoanAmountForm */}
                     <div className="text-center">
                         <button className="btn btn-primary pl-4 pr-4" onClick={props.displayForm}>
                             <h5 className="font-weight-normal m-0">Return To Form</h5>
@@ -53,5 +59,5 @@ const LoanDetails = (props) => {
         </div>
     );
 };
-
+//  default export
 export default LoanDetails;
